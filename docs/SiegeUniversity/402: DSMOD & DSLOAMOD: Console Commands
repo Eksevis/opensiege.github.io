@@ -1,0 +1,351 @@
+Siege University - 402: DSMOD & DSLOAMOD: Console Commands
+**Introduction**
+Development consoles are in just about every game at some point. Most of them are made inacessible or otherwise patched out from being usable by the purchaser of games, and some games have them intentionally accessible to even the common consumer. Dungeon Siege, in particular, is probably the rarest case where it's somewhere between the middle. The console still exists within the base game, but without scripting isn't usable by any practical means, but Siege Toolkit comes with the must-have alternative: DSMOD and DSLOAMOD.
+
+It doesn't take long to realize they're different, even if it weren't for the caution pattern surrounding the icon, but as soon as you boot it up, white words on a black screen pop up. You might panic, but don't worry! If there is an issue with loading the engine or assets, it will be sure to clearly warn you with a popup box. These boxes will do their best to inform you what's going on and what needs to be fixed, and so long as you read them carefully, you can figure out what went wrong and how you might be able to fix it, but this document isn't mean to explain how to fix those, but how to really work with the console that DSMOD and DSLOAMOD provide you with.
+
+Even before you've opened a map, you can access the console and type in commands.
+
+[FINISH SEGMENT]
+**Controls**
+` - Open up the console
+PgUp - Scroll up the feed of the console
+PgDn - Scroll down the feed of the console
+Enter - Enter a completed command for it to be processed by the game
+
+**Commands**
+Contentdb Reload - Reload the contentdb on the fly as you write/debug skrit and gas. This will make any changes you made in \bits\world\contentdb\ take effect. Good for skrit debugging
+
+SFX Reload - Reload the siegeFX scripts that you created in the Bits folder
+
+Stats <life/mana/int/dex/str/melee/ranged/nmagic/cmagic> <value> - Use this command if you need to test an item that is outside of the character's abilites/stats. 
+
+add <#template_name:variant_name> - Use this to summon a specific item, monster or world decoration at the point of your cursor. With the specific variant, you can summon the same item of different rarities. (example being c_str / c_def)
+
+give <#template_name:variant_name> - Similar to the add command, but puts the item directly into your inventory. 
+
+equip <#template_name:variant_name> - Going from give, it automatically equips the given template  (equippable or not).
+
+**TELEPORTS: QUICK LOOK UP**
+**KINGDOM OF EHB** 
+										|----------------	fh_r1a (Opening Cutscene)
+fh_r1 (Farmlands 1)	-------------------------------------	bc_r1 (Bear cave)
+|										|----------------	hc_r1 (Edgaar's basement)
+|
+path2crypts (Farmlands 2 / Outside of Crypts)	---------	gd_b (Small dungeon with Gargoyles)
+|		
+cr_r1 (Crypts)
+|
+|
+fh_r3 (Farmlands 3 / path to Stonebridge)
+|
+|
+bt_r1 (Stonebridge)
+|
+|
+path2sd (Path to Wesrin Cross)	------------------------	path2sd_a (Tower with Ordus' Axe)
+|										|
+|										|
+sd_r1 (Wesrin Cross 1)					|
+|										|
+|										|
+sd_r2 (Wesrin Cross 2)					|	
+|										|
+|										|
+path2dm (Outside of Dwarven Mines)	----|	
+|
+|	
+dm_r10 (Dwarven Mines 1)
+|
+|	
+dm_r2 (Dwarven Mines 2)
+|
+|
+dm_r8 (Dwarven Mines 3)	--------------------------------	dm_r8a (Dwarven crew quarters)
+|
+|
+dm_r11 (Dwarven Mines 4)
+|
+|
+path2nt (Path to Glacern)	----------------------------	fc_r1 (Furok cave)
+|
+|
+nt_r1 (Glacern)	----------------------------------------	nt_r1a (Ada Riverstarn's basement)
+|
+|
+path2ac (Path to Ice Caves)	----------------------------	id_r1 (Basement of house surrounded by Wolves)
+|										|---------------	id_r2 (Small underground ice dungeon)
+|
+ac_r1 (Outside of Ice Caves)	------------------------	ac_r1a (Secret path to abandoned mine with Scorpions)
+|
+|
+ac_r2 (Ice Caves 1)	------------------------------------	ac_r2a (Outside of Ice Caves, with the statues)
+|															|
+|															|
+ac_r5 (Ice Caves 2)											|
+|															|
+|															|
+ac_r3 (Ice Caves 3)	----------------------------------------|
+|
+|
+lc_r5 (Ice Caves 4)	------------------------------------	lc_r5a (Secret with Braak Mages & a chest)
+|
+|
+mm_r1 (Jeriah's Cabin)
+|
+|
+sr_r1 (Subterranean River 1)
+|
+|
+sr_r2 (Subterranean River 2)
+|
+|
+sr_r3 (Subterranean River 3)
+|
+|
+sr_r4 (Subterranean River 4)	------------------------	sr_side (Secret with the Fury Eye)
+|
+|
+df_r0 (Dark Forest 1 / Traveler's Camp)
+|
+|
+df_bandits (Dark Forest 2)
+|
+|
+df_r1 (Dark Forest 3 / Swamp 1)
+|
+|
+ds_r1 (Swamp 2 / Graveyard)
+|
+|
+ds_r2 (Swamp 3 / Verma's Potions)	--------------------	ds_r2a (Secret small swamp dungeon)
+|
+|
+gi_r1 (Goblin Warrens 1)
+|
+|
+gi_r4 (Goblin Warrens 2)
+|
+|
+gi_r5 (Goblin Warrens 3)	----------------------------	gi_r5a (Goblin Warrens Secret area)
+|
+|
+gi_r11 (Goblin Warrens 4)
+|
+|
+gi_r10 (Goblin Warrens 5)	----------------------------	gi_r10a (Goblin Warrens Secret area 2)
+|
+|
+gi_r3 (Goblin Warrens 6 / Goblin Inventor Boss)
+|
+|
+gi_r3_b (Goblin Warrens 7 / Exit)
+|
+|
+tr_r1 (Beach / Sequoia Forest 1)							wd_r1a (Water Dungeon Secret)
+|															|
+|															|
+tr_r2 (Sequoia Forest 2 / Thayne's shop)	------------	wd_r1 (Water Dungeon)
+|
+|
+tr_r3 (Sequoia Forest 3)	----------------------------	tr_r3a (Secret mushroom & Darkling cave)
+|
+|
+fd_r1 (Fury Den)
+|
+|
+cf_r1 (Fortress Kroth / Gresh Boss)	--------------------	cf_r1a (Secret cave with a chest)
+|
+|
+path2dc (Path to Cliffs of Fire / Desert Canyon)	----	hs_r1 (Dungeon with Sikra)
+|
+|
+dc_r0 (Cliffs of Fire 1
+|
+|
+dc_r1 (Cliffs of Fire 2 / Droog City)	----------------	dc_r1a (Secret area with map of Ehb)
+|
+|
+dc_r2 (Cliffs of Fire 3)	----------------------------	dl_r1 (Scorch's Lair)
+|
+|
+path2ce (Drake cave)
+|
+|
+ce_r1 (Path to Castle Ehb)	----------------------------	ce_r1a (Cave with Giant Skeletons)
+|
+|
+ce_r2 (Castle Ehb)	------------------------------------	ce_r2a (Hedge Maze)
+|
+|
+cd_r1 (Castle Dungeon 1)
+|
+|
+gd_a_r1 (Castle Dungeon 2 / Chamber of Stars)
+|
+|
+lc_r1a (Lava Caverns 1)
+|
+|
+gl_r1 (Lava Caverns 2)
+|
+|
+gom2 (Path to Gom & Gom Boss
+
+**UTRAEAN PENINSULA**
+abc_r0
+abc_r1
+castle
+castle_1
+castle_dun
+castle_town
+crypts - (invalid)
+crypts2sd
+des_r1
+des_r2
+des_town
+desert
+df2ds
+dragon
+ds_r2
+dunes_a
+dunes_b
+eg_seck_dungeon
+farmland_and_chapel
+fd_r4
+gd_r1
+gi_a
+gp_r1
+gp_r2
+grs2des
+grs_dry_hard_r1
+hades
+hub_quest_dun
+ice_cave
+ice_cave_2
+id_r2
+island
+md_r0
+mega_forest_east_pond
+mega_forest_falls
+mega_forest_gd
+mega_forest_glade
+mega_forest_tower
+mine_town
+mines
+mines2
+mines2_exit
+mines3
+newbie_dun
+oasis
+oasis_ruins
+ocean
+of_r1
+path2crypts
+path2ice
+path2ice_r2
+path2mines
+quarry
+quest_barracks_a
+quest_barracks_b
+quest_barracks_c
+quest_crystwind_a
+quest_elddim_a
+quest_elddim_b
+quest_fallraen_a
+quest_fallraen_b
+quest_grescal_a
+quest_grescal_b
+quest_hiroth_a
+quest_hiroth_b
+quest_hiroth_c
+quest_horvart_a
+quest_horvart_b
+quest_horvart_c
+quest_horvart_d
+quest_horvart_e
+quest_horvart_f
+quest_horvart_g
+quest_lang_a
+quest_meren_a
+quest_meren_b
+quest_quillrabe_a
+quest_quillrabe_b
+quest_sanctuary_a
+quest_sanctuary_b
+quest_sanctuary_c
+quest_trella_a
+quest_trella_b
+river_canyon
+sd_r1
+sf_r1
+sf_r2
+sno_r1
+snow_town
+sr2
+sr_r5
+sr_r5_a
+swamp_town
+swamp_town_center
+town_center
+wd_r1
+
+**LEGENDS OF ARANNA**
+a1_lostqueen_nis
+a1_r1_start
+a1_r2_start
+a1_r3_start
+a1_r4_start
+a1_r5_start
+a1_r6_end
+a2_r0_start
+a2_r0a_start
+a2_r1_start
+a2_r2_start
+a2_r3_start
+a2_r4_a_start
+a2_r4_b_start
+a2_r5_start
+a2_r6_start
+a3_r1_start
+a3_r2_start
+a3_r3_start
+a3_r3a_algher_nis
+a3_r3a_start
+a4_cicatrix_nis
+a4_r1_start
+a4_r2_end
+ar_r2_start
+a4_r3_start
+a4_r4_start
+a4_skull_nis
+a5_r1_start
+a5_r2_start
+a5_r3_start
+a5_r4_end
+a5_r4_start
+a5_shadowjumper_nis
+a6_r1_start
+a6_r2_start
+a6_r3_start
+a6_r4_start
+a6_r5_start
+a6_r6_start
+a6_runecaster_nis
+a7_cliff_nis
+a7_r1_start
+a7_r2_end
+a7_r2_start
+a7_r3_end
+a7_r3_start
+a8_fortress_nis
+a8_r1_start
+a8_r1b_start
+a8_r2_start
+a8_r3_start
+a9_clock_nis
+a9_r1_start
+a9_r2_disco
+a9_r2_start
+a9_r3_start
+world_map_trigger_test
